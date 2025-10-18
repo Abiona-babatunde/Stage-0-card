@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <header>
+        <figure>
+          <img
+            src="./src/profile-pic.jpeg"
+            alt="Profile picture of Abiona Babatunde"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <div>
+          <h2 data-testid="test-user-name">Abiona Babatunde</h2>
+          <p data-testid="test-user-role">FrontEnd developer.</p>
+          <p data-testid="test-user-bio">
+            A passionate frontend developer learning modern web development.
+          </p>
+        </div>
+      </header>
+      <p class="time">
+        Current time:
+        <span data-testid="test-user-time"></span>
+      </p>
+      <hr />
+      <footer>
+        <nav data-testid="test-user-social-links">
+          <ul>
+            <li class="link">
+              <a
+                href="https://www.instagram.com/teddymania4g?igsh=MWFudWExa3U4eXU3Yw%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-instagram"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="link">
+              <a
+                href="https://www.linkedin.com/in/babatunde-abiona-91147528a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li class="link">
+              <a
+                href="https://github.com/Abiona-babatunde"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                Github
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <section>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Coding</li>
+            <li>learning</li>
+            <li>Gaming</li>
+            <li>Designing</li>
+            <li>Travel</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li class="li">Code Hidden Bugs</li>
+            <li class="li">Slow Internet</li>
+            <li class="li">Lagging Devices</li>
+          </ul>
+        </section>
+      </footer>
+    </article>
+  </body>
+</html>

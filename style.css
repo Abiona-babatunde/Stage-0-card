@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+
+article{
+   max-width: 800px;
+   margin-top: 20px;
+   padding: 2rem;
+   border-radius: 8px;
+   color: black;
+   background-color: white;
+   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+   font-family: Arial, Helvetica, sans-serif;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+img{
+   width: 80px;
+   height: 80px; 
+   border-radius: 100%;
+}
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.time{
+    font-family: cursive;
+    color: red;
+    font-size: small;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+li{
+    color: darkblue;
+    width: 6rem;
+    background-color: powderblue;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    border: solid 1px darkblue;
+}
+
+.li{
+    color: darkmagenta;
+    width: 9rem;
+    background-color: white;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    border: solid 1px darkmagenta;
+}
+
+.link{
+    width: 8rem;
+    background-color: white;
+    border: solid burlywood 2px;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* margin-top: 2rem; */
+}
+
+
+@media (max-width: 600px) {
+  article {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li, .li, .link {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .time {
+    text-align: center;
+  }
+}
+
+
+/* TABLET SCREENS (601px - 900px) */
+
+@media (min-width: 601px) and (max-width: 900px) {
+  article {
+    max-width: 700px;
+    padding: 1.5rem;
+  }
+
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+  }
+
+  ul {
+    justify-content: space-evenly;
+  }
+
+  li, .li, .link {
+    width: 9rem;
+  }
+}
+
+
+/* DESKTOP SCREENS (901px and above) */
+
+@media (min-width: 901px) {
+  article {
+    max-width: 900px;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  ul {
+    justify-content: flex-start;
+  }
+
+  li, .li, .link {
+    width: 9rem;
+  }
+}
